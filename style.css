@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+#bar::before {
+  content: "";
+  background-color: rgb(100, 155, 155);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+
+}
+
+#bar ul {
+  display: flex;
+}
+
+#bar ul li {
+  list-style: none;
+}
+
+#bar ul li a {
+  padding: 10px 20px;
+  color: whitesmoke;
+  display: block;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  /* Maximum width */
+  margin: 0 auto;
+  /* Center it */
+}
+
+.container .content {
+  position: absolute;
+  /* Position the background text */
+  bottom: 70;
+  /* At the bottom. Use top:0 to append it to the top */
+  top: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  /* Grey text */
+  width: 100%;
+  /* Full width */
+  padding: 10px;
+  /* Some padding */
+  text-align: center;
+  font-size: x-small;
+  opacity: 0;
+}
+
+.container .content:hover {
+  opacity: 1;
+}
+
+.profileimg {
+  margin-top: 1%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.jobdes {
+  text-align: center;
+  color: rgb(100, 155, 155);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding-left: 20%;
+}
+
+.box img {
+  height: 150px;
+  /* Adjust the height as needed */
+  margin-right: 20px;
+}
+
+.text {
+  font-size: 15px;
+  color: rgb(4, 65, 247);
+  font-style: oblique;
+  padding-right: 20%;
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding-left: 20%;
+}
+
+.box2 img {
+  height: 150px;
+  /* Adjust the height as needed */
+  margin-right: 20px;
+}
+
+.text2 {
+  font-size: 15px;
+  color: rgb(4, 65, 247);
+  font-style: oblique;
+  padding-right: 20%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.des {
+  text-align: center;
+  color: rgb(100, 155, 155);
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 2%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  clear: both;
+  display: table;
+}
